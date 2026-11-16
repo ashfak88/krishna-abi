@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (videoStarted) return;
     videoStarted = true;
 
+    // Open the gates
+    const gateLeft = document.getElementById('gate-left');
+    const gateRight = document.getElementById('gate-right');
+    if (gateLeft) gateLeft.classList.add('open');
+    if (gateRight) gateRight.classList.add('open');
+
     // Hide the open invitation button
     if (openInvitationBtn) {
       openInvitationBtn.classList.add('hidden');

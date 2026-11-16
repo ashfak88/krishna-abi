@@ -4,6 +4,8 @@ export default function Page() {
     <>
       <div id="opening">
         <video id="opening-video" src="assets/opening-video.mp4" muted playsInline preload="auto"></video>
+        <div className="gate-door gate-left" id="gate-left"></div>
+        <div className="gate-door gate-right" id="gate-right"></div>
         <button className="open-invitation-btn" id="open-invitation-btn">Open Invitation</button>
         <button className="skip-btn" id="skip-btn">Skip</button>
       </div>
