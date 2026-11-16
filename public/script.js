@@ -1,5 +1,5 @@
 /* ============================================================
-   Sufair & Jugunu · Askar & Nasiba — site script
+   Krishna & Abhi — Engagement Invitation site script
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -62,9 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start video
     if (video) {
-      video.play().catch(() => {
-        console.log('Video autoplay blocked');
-      });
+      video.muted = true;
+      video.currentTime = 0;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          console.warn('Video play error or autoplay blocked:', err);
+          // If video fails to load or play, auto finish opening so screen is never stuck
+          finishOpening();
+        });
+      }
     }
   }
 
@@ -89,9 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
     openInvitationBtn.addEventListener('click', startExperience);
   }
 
-  // Video ended handler
+  // Video ended or error handler
   if (video) {
     video.addEventListener('ended', finishOpening);
+    video.addEventListener('error', () => {
+      console.warn('Opening video error, advancing to invitation');
+      finishOpening();
+    });
   }
 
   // Fallback timeout
@@ -169,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---------------- Countdown ---------------- */
-  const weddingDate = new Date('2026-08-21T14:30:00+05:30').getTime();
+  const weddingDate = new Date('2026-11-23T15:00:00+05:30').getTime();
   const dEl=document.getElementById('cd-days'), hEl=document.getElementById('cd-hours'),
         mEl=document.getElementById('cd-mins'), sEl=document.getElementById('cd-secs');
   if (dEl && hEl && mEl && sEl) {
@@ -208,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const waFab = document.getElementById('whatsapp-fab');
   if (waFab) {
     waFab.addEventListener('click', () => {
-      const text = encodeURIComponent('You are invited! Sufair & Jugunu / Askar & Nasiba — 21–22 August 2026. ' + window.location.href);
+      const text = encodeURIComponent('You are invited! Patel Krishna & Patel Abhi — Engagement Ceremony on 23 November 2026 at Pattan, Lunawada. ' + window.location.href);
       window.open(`https://wa.me/?text=${text}`, '_blank');
     });
   }
