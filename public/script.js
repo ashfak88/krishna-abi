@@ -1,5 +1,5 @@
 /* ============================================================
-   Krishna & Abhi — Engagement Invitation site script
+   Abhi & Krishna — Engagement Invitation site script
    ============================================================ */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const waFab = document.getElementById('whatsapp-fab');
   if (waFab) {
     waFab.addEventListener('click', () => {
-      const text = encodeURIComponent('You are invited! Patel Krishna & Patel Abhi — Engagement Ceremony on 23 November 2026 at Pattan, Lunawada. ' + window.location.href);
+      const text = encodeURIComponent('You are invited! Abhi & Krishna — Engagement Ceremony on 23 November 2026 at Pattan, Lunawada. ' + window.location.href);
       window.open(`https://wa.me/?text=${text}`, '_blank');
     });
   }

@@ -18,9 +18,9 @@ export default function Page() {
             ॥ શ્રી ગણેશાય નમઃ ॥
           </div>
           <h1 className="reveal">
-            {" Patel Krishna "}
+            {" Abhi "}
             <span className="amp">&amp;</span>
-            {" Patel Abhi "}
+            {" Krishna "}
           </h1>
           <div className="names reveal">Two hearts, two souls, one beautiful journey begins</div>
           <div className="date-pill reveal">
@@ -41,29 +41,29 @@ export default function Page() {
           <p className="section-sub reveal">Together with our families, we joyfully invite you to celebrate our Engagement</p>
           <div className="couples-grid stagger-group" style={{ maxWidth: '820px', margin: '0 auto' }}>
             <div className="couple-card">
-              <div className="eyebrow">The Bride</div>
-              <div className="person">
-                <h3>Patel Krishna<br />Sunderbhai</h3>
-                <p>{"Daughter of"}</p>
-                <p style={{ fontWeight: '600', color: 'var(--burgundy)', marginTop: '0.4rem', fontStyle: 'normal' }}>
-                  {"Mr. Patel Sunderbhai Chandubhai"}
-                </p>
-                <p style={{ fontWeight: '600', color: 'var(--burgundy)', fontStyle: 'normal' }}>
-                  {"& Mrs. Patel Shakuntalaben Sunderbhai"}
-                </p>
-              </div>
-            </div>
-
-            <div className="couple-card">
               <div className="eyebrow">The Groom</div>
               <div className="person">
-                <h3>Patel Abhi<br />Jayeshbhai</h3>
+                <h3>Abhi</h3>
                 <p>{"Son of"}</p>
                 <p style={{ fontWeight: '600', color: 'var(--burgundy)', marginTop: '0.4rem', fontStyle: 'normal' }}>
                   {"Mr. Patel Jayeshbhai Parsottambhai"}
                 </p>
                 <p style={{ fontWeight: '600', color: 'var(--burgundy)', fontStyle: 'normal' }}>
                   {"& Mrs. Patel Sonalben Jayeshbhai"}
+                </p>
+              </div>
+            </div>
+
+            <div className="couple-card">
+              <div className="eyebrow">The Bride</div>
+              <div className="person">
+                <h3>Krishna</h3>
+                <p>{"Daughter of"}</p>
+                <p style={{ fontWeight: '600', color: 'var(--burgundy)', marginTop: '0.4rem', fontStyle: 'normal' }}>
+                  {"Mr. Patel Sundarbhai Chandubhai"}
+                </p>
+                <p style={{ fontWeight: '600', color: 'var(--burgundy)', fontStyle: 'normal' }}>
+                  {"& Mrs. Patel Shakuntalaben Sundarbhai"}
                 </p>
               </div>
             </div>
@@ -150,8 +150,8 @@ export default function Page() {
             Your blessings and presence mean the world to us as we begin this joyous chapter together.
           </p>
           <div className="gold-divider reveal"></div>
-          <p className="reveal" style={{ marginTop: '1.4rem', fontSize: '1rem', color: 'var(--burgundy)', fontWeight: '500' }}>
-            Patel &amp; Sunderbhai Family &bull; Patel &amp; Jayeshbhai Family
+          <p className="reveal" style={{ marginTop: '1.4rem', fontSize: '1rem', color: 'var(--burgundy)', fontWeight: '600' }}>
+            {"Patel Jayeshbhai Parsottambhai & Patel Sonalben Jayeshbhai"}
           </p>
           <p className="reveal" style={{ marginTop: '0.8rem', fontSize: '0.88rem', color: 'var(--bronze)' }}>
             Contact: 9510336458 / 7069025515
